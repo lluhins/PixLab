@@ -661,7 +661,7 @@ public class SimplePicture implements DigitalPicture
  public boolean write(String fileName)
  {
      try {
-         this.writeOrFail(fileName);
+         this.writeOrFail("images/"+fileName);
          return true;
      } catch (Exception ex) {
          System.out.println("There was an error trying to write " + fileName);
